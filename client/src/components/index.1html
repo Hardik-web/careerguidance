@@ -1,0 +1,147 @@
+  
+    {
+        question:"Q2: What is the full form of CSS?",
+        a: "Cascading Style Sheets",
+        b: "Cascading Style Sheeps",
+        c: "Cartoons Style Sheets",
+        d: "Cascading Super Sheets",
+        ans: "ans1"  
+    },
+    {
+        question:"Q3: What is the full form of JS?",
+        a: "JavaScript",
+        b: "JavaSuper",
+        c: "JustScript",
+        d: "JordenShoes",
+        ans: "ans1"   
+    },
+    {
+        question:"Q4: What is the full form of HTTP ?",
+        a: "HyperText Transfer Product",
+        b: "HyperText Test Protocol",
+        c: "Hey Transfer Protocol",
+        d: "HyperText Transfer Protocol",
+        ans: "ans4"
+    },
+    {
+        question:"Q5: The product of two number is 120 and the sum of their squares is 289.The sum of the number is ?",
+        a: "20",
+        b: "23",
+        c: "169",
+        d: "34",
+        ans: "ans2" 
+    };
+
+
+    
+const Quiz = () => {
+    return (
+        <div className="main-div" >
+            <div className="inner-div">
+                <h2 className="question">Question comes here</h2>
+                <ul>
+                    <li>
+                        <label htmlFor="ans1" id="option1">Answer Option</label>
+                        <input type="radio" name="answer" id="ans1" className="answer"/>
+                    </li>
+                    <li>
+                        <label htmlFor="ans2" id="option2">Answer Option</label>
+                        <input type="radio" name="answer" id="ans2" className="answer"/>
+                    </li>
+                    <li>
+                        <label htmlFor="ans3" id="option3">Answer Option</label>
+                        <input type="radio" name="answer" id="ans3" className="answer"/>
+                    </li>
+                    <li>
+                        <label htmlFor="ans4" id="option4">Answer Option</label>
+                        <input type="radio" name="answer" id="ans4" className="answer"/>
+                    </li>
+                </ul>
+                <button id="submit">submit</button>
+                <div id="showScore" className="scoreArea">ggg</div>
+            </div>
+           
+        </div>
+    )
+}
+
+export default Quiz
+
+.main-div{
+    width: 100vw;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(242, 249, 255);
+}
+.inner-div{
+    width: 40vw;
+    background-color: #fff;
+    padding: 30px 80px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0, 0.4);
+}
+.question{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px 0 35px 0;
+
+}
+.inner-div li{
+    font-size: 20px;
+    margin-top: 12px;
+ 
+
+}
+.answer{
+    cursor: pointer;
+}
+#submit,.btn1{
+padding: 10px 30px;
+outline: none;
+font-size: 20px;
+font-weight: 400;
+display: block;
+margin: auto;
+outline: none;
+border: none;
+text-transform: uppercase;
+color: white;
+background-color: #74b9ff;
+margin-top: 40px;
+}
+#submit:hover{
+    background-color: #0984e3;
+}
+#showScore{
+    background-color: #dfe6e9;
+    margin-top: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 10px -7px rgba(0,0,0, 0.4);
+}
+.scoreArea{
+    display: none;
+}
+
+
+<li className="nav-item">
+    <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+</li>
+<li className="nav-item">
+    <NavLink className="nav-link" to="/quiz">Quiz</NavLink>
+</li>
+<li className="nav-item">
+    <NavLink className="nav-link" to="/about">About</NavLink>
+</li>
+<li className="nav-item">
+    <NavLink className="nav-link" to="/contact">Contact</NavLink>
+</li>
+<li className="nav-item">
+    <NavLink className="nav-link" to="/login">Login</NavLink>
+</li>
+<li className="nav-item">
+    <NavLink className="nav-link" to="/signup">Registration</NavLink>
+</li>
+<li className="nav-item">
+    <NavLink className="nav-link" to="/logout">Logout</NavLink>
+</li>
